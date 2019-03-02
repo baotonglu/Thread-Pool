@@ -4,7 +4,7 @@ This is a simple thread pool implementation that has has some enhanced features 
 ## Feature
 You can specifiy the number of threads of the pool and submit your task to the pool. Specifically, refer to **How to Use**.
 
-## How to use
+## How to Use
 The repo has a static library named **libpool.a**, you can directly add this lib to your own code. 
 You may refer to this [page](https://www.cs.virginia.edu/~cr4bd/4414/S2019/pool.html) to know how to use this library.
 
