@@ -2,10 +2,10 @@
 This is a simple thread pool implementation that has has some enhanced features such as  "wait_for_task ".
 
 ## Feature
-You can specifiy the number of threads of the pool and submit your task to the pool. Specifically, You may refer to this [page](https://www.cs.virginia.edu/~cr4bd/4414/S2019/pool.html) to have a full understanding.
+You can specifiy the number of threads of the pool and submit your task to the pool. Specifically, You may refer to this [page](https://www.cs.virginia.edu/~cr4bd/4414/S2019/pool.html) to get a full understanding.
 
 ## Example of Usage
-The repo has a static library named **libpool.a**, you can directly add this lib to your own code. An example is listed below:
+The repo has a static library named **libpool.a**, you can directly add this lib to your own code. An example of usage is listed below:
    
 1. To use the ThreadPool class you create, a user would create a subclass of Task that implements the Run() method that performs an operation they want to add to the queue of operations to do:
 ``` c
@@ -39,7 +39,7 @@ ThreadPool pool(num_threads);
 pool.SubmitTask("sum arrayA", new ComputeSumTask(&sum_of_A, arrayA, ARRAY_SIZE));
 pool.SubmitTask("sum arrayB", new ComputeSumTask(&sum_of_B, arrayB, ARRAY_SIZE));
 ```
-3. and finally wait for the tasks to complete before stopping the thread pool(**but this step is optional**):
+3. Finally wait for the tasks to complete before stopping the thread pool(**but this step is optional**):
 ``` c
 pool.WaitForTask("sum arrayA");
 pool.WaitForTask("sum arrayB");
