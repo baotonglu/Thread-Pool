@@ -46,7 +46,7 @@ pool.WaitForTask("sum arrayB");
 
 pool.Stop();
 ```
-## About the Souce Code
+## About the Source Code
 Some knowledge about **pthread**: before invoking **pthread_cond_signal**, make sure to have the lock held. This ensures that we don't accidentally introduce a race condition into our code.
 
 ## Disclaimer
